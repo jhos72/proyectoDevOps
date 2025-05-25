@@ -11,15 +11,12 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/Logo Restaurante Sencillo Naranja.png" type="image/jpeg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  ">
+        <nav class="navbar navbar-expand-lg position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/Logo Restaurante Sencillo Naranja.png" alt="Logo" width="70" height="70"
@@ -52,36 +49,99 @@
         </nav>
 
     </header>
-
-    <section class="hero" style="background-image:url('./assets/comida1.jpg'); height: fit-content;">
-        <h1>Bienvenido a Cayenna Restaurant</h1>
-        <p>La mejor comida en el mejor ambiente</p>
-        <a href="#menu" class="boton">Ver menú</a>
-    </section>
-    <section class="menu" id="menu">
-        <h2>Nuestros platos</h2>
-        <div class="platos">
-            <div class="plato">🍝 Pasta Italiana</div>
-            <div class="plato">🥩 Asado Criollo</div>
-            <div class="plato">🍰 Postre Casero</div>
+    <div class="container-fluid object-fit-cover" style="background-image:url('./assets/comida1.jpg'); ">
+        <h1 class="p-5 m-5" style="color: white;">Bienvenido a Cayenna Restaurant</h1>
+        <p class="p-5 m-5 fs-4" style="color: white;">La mejor comida en el mejor ambiente</p>
+        <a href="#menu" class="btn btn-primary btn-lg mx-auto my-3 p-2 " style="width: 200px;">Ver menú</a>
+    </div>
+    <h1 class="text-center">Nuestros platos</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-    </section>
-    <section class="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Desde 1990, sirviendo experiencias inolvidables...</p>
-    </section>
-    <section class="contacto">
-        <h2>Reservar una mesa</h2>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/comida6.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/comida2.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/comida5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h2 class="text-center">Sobre Nosotros</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <img src="./assets/res1.jpg" alt="">
+            </div>
+            <div class="col text-center">
+                <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis in facilis
+                    voluptate voluptates laboriosam beatae non, ipsa dolore soluta fugit dolorem deserunt architecto
+                    necessitatibus neque quidem tempore eum iure cumque! Desde 1990, sirviendo experiencias
+                    inolvidables...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <h2 class="text-center">Reservar una mesa</h2>
         <form>
-            <input type="text" placeholder="Tu nombre"><br>
-            <input type="date"><br>
-            <input type="time"><br>
-            <input type="submit" value="Reservar">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" aria-describedby="nombreHelp">
+                <div id="nombreHelp" class="form-text">Por favor inserte su nombre completo.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Fecha:</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Hora:</label>
+                <input type="time" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar</button>
         </form>
-    </section>
+    </div>
 
     <footer>
-        <p>© 2025 Restaurante Cayenna | Síguenos en redes</p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h5>Donde nos encontramos</h5>
+                    <hr>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15035.66175830207!2d-65.74907400000001!3d-19.5881231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1748212729036!5m2!1ses-419!2sbo"
+                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col">
+                    <h5>Siguenos en redes sociales</h5>
+                    <hr>
+                    <i class="bi bi-facebook" style="color: white;"></i>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+
+            </div>
+        </div>
+        <p class="text-center">© 2025 Restaurante Cayenna | Síguenos en redes</p>
     </footer>
 </body>
 
