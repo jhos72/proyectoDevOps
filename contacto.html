@@ -10,47 +10,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <link rel="icon" href="./assets/Logo Restaurante Sencillo Naranja.png" type="image/jpeg">
+    <link rel="icon" href="./assets/Imagen2.png" type="image/jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg position-relative">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/Logo Restaurante Sencillo Naranja.png" alt="Logo" width="70" height="70"
-                        class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">MENU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">RESERVAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg position-relative m-0 p-2" style="background-color: #F57C00; ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Imagen2.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="index.html" style="color: #333333">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="reservas.html">RESERVAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-    </header>
-    <div class="container">
-        <h2>Formulario de contacto </h2>
+        </div>
+    </nav>
+    <div class="container p-5 m-3" style="background-color: #fbfcfc;">
+        <h2 class="text-center">Formulario de contacto </h2>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre completo:</label>
@@ -68,15 +69,15 @@
                 <label for="exampleInputPassword1" class="form-label">Asunto:</label>
                 <input type="text" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-warning ms-3">Enviar</button>
         </form>
     </div>
-    <div class="container">
-        <div class="row">
+    <div class="container" style="background-color: #fbfcfc;">
+        <div class="row" >
             <div class="col">
                 <h2>Ubicacion</h2>
                 <p>Nos encontramos en la calle <strong>P. Wallabe 42 Sidney</strong></p>
-                <button>Ver en maps</button>
+                <button class="btn btn-lg btn-warning">Ver en maps</button>
             </div>
             <div class="col">
                 <iframe
@@ -86,43 +87,42 @@
             </div>
         </div>
         <div class="row">
-            <h2>Horarios de atencion</h2>
-            <p>De lunes a viernes de 10:00am a 11:00pm</p><br>
-            <p>Sabados y domingos de 5:00pm a 10:00pm</p>
+            <h2 class="text-center">Horarios de atencion</h2>
+            <p  class="mb-3" >De lunes a viernes de 10:00am a 11:00pm</p><br>
+            <p  class="mb-3">Sabados y domingos de 5:00pm a 10:00pm</p>
         </div>
     </div>
-    <footer>
+    <footer class="p-0 m-0" style="background-color: #4DB6AC;">
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <h5>Contacto directo</h5>
-                    <hr>
-                    <h5>Telefono:</h5>
-                    <p>+591 69874588</p>
-                    <h5>Whatsapp</h5>
-                    <p>+591 69874588</p>
-                    <h5>Correo Electronico</h5>
-                    <p>jhos243@gmail.com</p>
+                    <h5 class="m-3" style="color: #333333;"><i class="bi bi-info-circle fs-4" style="color: white;">
+                            Contacto directo</i></h5>
+                    <hr class="border border-warning border-2 opacity-75">
+                    <h5 class="m-2" style="color: #fbfcfc ;">Telefono:</h5>
+                    <p style="color: #fbfcfc ;">+591 69874588</p>
+                    <h5 class="m-2" style="color: #fbfcfc ;">Whatsapp</h5>
+                    <p style="color: #fbfcfc ;">+591 69874588</p>
+                    <h5 class="m-2" style="color: #fbfcfc ;">Correo Electronico</h5>
+                    <p style="color: #fbfcfc ;">jhos243@gmail.com</p>
                 </div>
                 <div class="col">
-                    <h5>Donde nos encontramos</h5>
-                    <hr>
+                    <h5 class="m-3" style="color: #fbfcfc ;">Donde nos encontramos</h5>
+                    <hr class="border border-warning border-2 opacity-75">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15035.66175830207!2d-65.74907400000001!3d-19.5881231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1748212729036!5m2!1ses-419!2sbo"
                         width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col">
-                    <h5>Siguenos en redes sociales</h5>
-                    <hr>
-                    <i class="bi bi-facebook" style="color: white;"></i>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
+                    <h5 class="m-3" style="color: #fbfcfc ;">Siguenos en redes sociales</h5>
+                    <hr class="border border-warning border-2 opacity-75">
+                    <i class="bi bi-facebook fs-4" style="color: white;"> Facebook</i><br>
+                    <i class="bi bi-instagram fs-4" style="color: white;"> Instagram</i>
                 </div>
-
             </div>
         </div>
-        <p class="text-center">© 2025 Restaurante Cayenna | Síguenos en redes</p>
+        <p class="text-center fs-5" style="color: #fbfcfc;"><strong>© 2025 Restaurante Cayenna </strong></p>
     </footer>
 </body>
 
