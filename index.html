@@ -9,17 +9,20 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-    <link rel="icon" href="./assets/Logo Restaurante Sencillo Naranja.png" type="image/jpeg">
+        crossorigin="anonymous"></script>    <link rel="icon" href="./assets/Imagen2.png" type="image/jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg position-relative">
+        <nav class="navbar navbar-expand-lg position-relative m-0 p-2" style="background-color: #F57C00; ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/Logo Restaurante Sencillo Naranja.png" alt="Logo" width="70" height="70"
+                    <img src="./assets/Imagen2.png" alt="Logo" width="70" height="70"
                         class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,32 +32,30 @@
                 <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">INICIO</a>
+                            <a class="nav-link" style="color: white;" href="#" style="color: #333333">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.html">MENU</a>
+                            <a class="nav-link" style="color: white;" href="menu.html">MENU</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            <a class="nav-link" style="color: white;" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">RESERVAS</a>
+                            <a class="nav-link" style="color: white;" href="reservas.html">RESERVAS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            <a class="nav-link" style="color: white;" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-    </header>
-    <div class="container-fluid object-fit-cover" style="background-image:url('./assets/res1.jpg'); ">
-        <h1 class="p-5 m-5" style="color: white;">Bienvenido a Cayenna Restaurant</h1>
+    <div class="container-fluid object-fit-cover m-0 p-0 img-fluid" style="background-image:url('./assets/res1.jpg'); ">
+        <h1 class="p-5 m-5" style="color: #f4d03f;">Bienvenido a Cayenna Restaurant</h1>
         <p class="p-5 m-5 fs-4" style="color: white;">La mejor comida en el mejor ambiente</p>
-        <a href="#menu" class="btn btn-primary btn-lg mx-auto my-3 p-2 " style="width: 200px;">Ver menú</a>
+        <a href="#menu" class="btn btn-outline-warning btn-lg mb-5 ms-5 " style="width: 200px;">Ver menú</a>
     </div>
-    <h1 class="text-center">Nuestros platos</h1>
+    <h1 class="text-center m-3 p-2" style="color: #333333;">Nuestros platos</h1>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -86,22 +87,23 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <h2 class="text-center">Sobre Nosotros</h2>
-    <div class="container text-center">
+    <h2 class="text-center my-3" style="color: #333333;">Sobre Nosotros</h2>
+    <div class="container text-center rounded" style="background-color: #fbfcfc;">
         <div class="row">
-            <div class="col">
-                <img src="./assets/res1.jpg" alt="">
+            <div class="col-6">
+                <img class="img-fluid rounded float-start" src="./assets/res1.jpg" alt="">
             </div>
-            <div class="col text-center">
+            <div class="col-6 text-center">
                 <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis in facilis
                     voluptate voluptates laboriosam beatae non, ipsa dolore soluta fugit dolorem deserunt architecto
                     necessitatibus neque quidem tempore eum iure cumque! Desde 1990, sirviendo experiencias
                     inolvidables...</p>
+                <button class="btn btn-lg btn-outline-warning">Ver Mas</button>
             </div>
         </div>
     </div>
-    <div class="container p-5">
-        <h2 class="text-center">Reservar una mesa</h2>
+    <div class="container p-5 m-5 rounded" style="background-color: #fbfcfc;">
+        <h2 class="text-center m-3">Reservar una mesa</h2>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre:</label>
@@ -120,39 +122,36 @@
         </form>
     </div>
 
-    <footer>
+    <footer class="p-0 m-0" style="background-color: #4DB6AC;">
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <h5>Contacto directo</h5>
-                    <hr>
-                    <h5>Telefono:</h5>
-                    <p>+591 69874588</p>
-                    <h5>Whatsapp</h5>
-                    <p>+591 69874588</p>
-                    <h5>Correo Electronico</h5>
-                    <p>jhos243@gmail.com</p>
+                    <h5 class="m-3" style="color: #333333;"><i class="bi bi-info-circle fs-4" style="color: white;">  Contacto directo</i></h5>
+                    <hr class="border border-warning border-2 opacity-75">
+                    <h5 class="m-2" style="color: #fbfcfc ;">Telefono:</h5>
+                    <p style="color: #fbfcfc ;">+591 69874588</p>
+                    <h5 class="m-2" style="color: #fbfcfc ;">Whatsapp</h5>
+                    <p style="color: #fbfcfc ;">+591 69874588</p>
+                    <h5 class="m-2" style="color: #fbfcfc ;">Correo Electronico</h5>
+                    <p style="color: #fbfcfc ;">jhos243@gmail.com</p>
                 </div>
                 <div class="col">
-                    <h5>Donde nos encontramos</h5>
-                    <hr>
+                    <h5 class="m-3" style="color: #fbfcfc ;">Donde nos encontramos</h5>
+                    <hr class="border border-warning border-2 opacity-75">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15035.66175830207!2d-65.74907400000001!3d-19.5881231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1748212729036!5m2!1ses-419!2sbo"
                         width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col">
-                    <h5>Siguenos en redes sociales</h5>
-                    <hr>
-                    <i class="bi bi-facebook" style="color: white;"></i>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
+                    <h5 class="m-3" style="color: #fbfcfc ;">Siguenos en redes sociales</h5>
+                    <hr class="border border-warning border-2 opacity-75">
+                    <i class="bi bi-facebook fs-4" style="color: white;">  Facebook</i><br>
+                    <i class="bi bi-instagram fs-4" style="color: white;"> Instagram</i>
                 </div>
-
             </div>
         </div>
-        <p class="text-center">© 2025 Restaurante Cayenna | Síguenos en redes</p>
+        <p class="text-center fs-5" style="color: #fbfcfc;"><strong>© 2025 Restaurante Cayenna </strong></p>
     </footer>
 </body>
-
 </html>
